@@ -2,6 +2,7 @@
 import linkedIn from "@/icons/icon-linked-in.svg";
 import github from "@/icons/icon-github.svg";
 import spotify from "@/icons/icon-spotify.svg";
+import email from "@/icons/icon-email.svg";
 const socialLinks = {
   github: {
     icon: github,
@@ -15,6 +16,10 @@ const socialLinks = {
     icon: spotify,
     link: "https://open.spotify.com/user/ephalys?si=UhyBFbz4S7qeLkMAkjliDg",
   },
+  email: {
+    icon: email,
+    link: "mailto:nvnrtnl@gmail.com",
+  },
 };
 </script>
 
@@ -25,7 +30,13 @@ const socialLinks = {
       :key="index"
       :href="socialLink.link"
     >
-      <img :src="socialLink.icon" alt="icon" width="18" height="18" />
+      <img
+        :src="socialLink.icon"
+        alt="icon"
+        width="18"
+        height="18"
+        target="_blank"
+      />
     </a>
   </div>
 </template>
