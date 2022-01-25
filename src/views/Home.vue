@@ -1,11 +1,25 @@
 <script setup>
-import signature from "@/images/signature.svg";
 import HomeText from "@/components/HomeText.vue";
+import Socials from "@/components/Socials.vue";
+import imageOfMe from "@/images/leon-tran-van.png";
+import signature from "@/images/signature.svg";
 </script>
 
 <template>
-  <div class="flex flex-col gap-10 items-start">
-    <img :src="signature" alt="signature" class="h-12" />
-    <HomeText/>
+  <img :src="signature" alt="signature" class="h-12 mb-6 md:mb-12" />
+  <HomeText class="order-1 md:w-1/2" />
+  <div
+    class="
+      md:flex
+      md:flex-col
+      md:justify-center
+      md:fixed
+      md:right-8
+      md:inset-y-16
+      md:w-5/12
+    "
+  >
+    <img :src="imageOfMe" alt="Image of me" class="w-full" />
+    <Socials class="mt-6" />
   </div>
 </template>
