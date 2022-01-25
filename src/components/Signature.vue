@@ -29,10 +29,12 @@
   &-base {
     stroke-dasharray: 760px;
     animation: write-base 3s ease forwards;
+    will-change: stroke-dasharray;
   }
   &-line {
     stroke-dasharray: 760px;
     animation: write-line 3s ease forwards;
+    will-change: stroke-dasharray;
   }
 }
 @keyframes write-base {
