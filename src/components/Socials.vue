@@ -1,8 +1,8 @@
 <script setup>
-import linkedIn from "@/icons/icon-linked-in.svg?component";
-import github from "@/icons/icon-github.svg?component";
-import spotify from "@/icons/icon-spotify.svg?component";
-import email from "@/icons/icon-email.svg?component";
+import linkedIn from "@/icons/icon-linkedin.svg";
+import github from "@/icons/icon-github.svg";
+import spotify from "@/icons/icon-spotify.svg";
+import email from "@/icons/icon-mail.svg";
 const socialLinks = {
   github: {
     icon: github,
@@ -31,13 +31,9 @@ const socialLinks = {
       :href="socialLink.link"
       target="_blank"
     >
-      <component
-        :is="socialLink.icon"
-        class="
-          transition
-          duration-300
-          hover:fill-pink-400 hover:translate-y-[-5px]
-        "
+      <img
+        :src="socialLink.icon"
+        class="h-5 transition duration-300 hover:translate-y-[-5px]"
       />
     </a>
   </div>
