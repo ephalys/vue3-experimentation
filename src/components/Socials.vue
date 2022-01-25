@@ -12,30 +12,32 @@ const socialLinks = {
     icon: linkedIn,
     link: "https://www.linkedin.com/in/leon-tran-van/",
   },
-  spotify: {
-    icon: spotify,
-    link: "https://open.spotify.com/user/ephalys?si=UhyBFbz4S7qeLkMAkjliDg",
-  },
   email: {
     icon: email,
     link: "mailto:nvnrtnl@gmail.com",
+  },
+  spotify: {
+    icon: spotify,
+    link: "https://open.spotify.com/user/ephalys?si=UhyBFbz4S7qeLkMAkjliDg",
   },
 };
 </script>
 
 <template>
-  <div class="flex gap-10 items-center">
+  <div class="flex gap-10 items-center justify-center">
     <a
       v-for="(socialLink, index) in socialLinks"
       :key="index"
       :href="socialLink.link"
+      target="_blank"
     >
-      <img
-        :src="socialLink.icon"
-        alt="icon"
-        width="18"
-        height="18"
-        target="_blank"
+      <component
+        :is="socialLink.icon"
+        class="
+          transition
+          duration-300
+          hover:fill-pink-400 hover:translate-y-[-5px]
+        "
       />
     </a>
   </div>
