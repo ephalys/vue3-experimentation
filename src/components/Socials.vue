@@ -1,8 +1,8 @@
 <script setup>
-import linkedIn from "@/icons/icon-linked-in.svg";
-import github from "@/icons/icon-github.svg";
-import spotify from "@/icons/icon-spotify.svg";
-import email from "@/icons/icon-email.svg";
+import linkedIn from "@/icons/icon-linked-in.svg?component";
+import github from "@/icons/icon-github.svg?component";
+import spotify from "@/icons/icon-spotify.svg?component";
+import email from "@/icons/icon-email.svg?component";
 const socialLinks = {
   github: {
     icon: github,
