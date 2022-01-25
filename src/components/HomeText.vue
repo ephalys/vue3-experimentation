@@ -18,6 +18,6 @@ const paragraphs = [
     <p v-for="(paragraph, index) in paragraphs" :key="index" class="text-base">
       {{ paragraph }}
     </p>
-    <p class="text-pink-400 text-sm">Made with Vue, Tailwind and Vite.</p>
+    <p class="text-pink-400">Made with Vue, Tailwind and Vite.</p>
   </div>
 </template>

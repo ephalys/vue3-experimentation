@@ -6,7 +6,13 @@ import signature from "@/images/signature.svg";
 </script>
 
 <template>
-  <img :src="signature" alt="signature" class="mb-6 md:mb-12" height="12" />
+  <img
+    :src="signature"
+    alt="signature"
+    class="mb-6 md:mb-12"
+    height="54"
+    width="151"
+  />
   <HomeText class="order-1 md:w-1/2" />
   <div
     class="
