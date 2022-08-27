@@ -1,6 +1,4 @@
-# ⚡ 22's version of my portfolio
-
-This is an experimentation of Vue3 + TailwindCSS.
+This is an experimentation of Vue3, Vite & TailwindCSS.
 
 ### Getting Started
 
